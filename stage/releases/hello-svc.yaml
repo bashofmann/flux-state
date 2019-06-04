@@ -5,7 +5,6 @@ metadata:
   name: hello-svc
   namespace: stage
   annotations:
-    flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: semver:~5.1
 spec:
   releaseName: hello-svc-stage
