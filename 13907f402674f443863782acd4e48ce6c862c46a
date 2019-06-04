@@ -1,0 +1,1 @@
+{"jobID":"2e02d360-7aca-7c7d-c9e8-30ea84f5323d","spec":{"type":"policy","cause":{"Message":"","User":"Bastian Hofmann \u003cb.hofmann@syseleven.de\u003e"},"spec":{"stage:helmrelease/hello-svc":{"add":{},"remove":{"automated":"true"}}}},"result":null}
