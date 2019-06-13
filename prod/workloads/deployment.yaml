@@ -4,9 +4,6 @@ apiVersion: apps/v1
 metadata:
   name: web-application
   namespace: prod
-  annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.chart-image: semver:~8.0
   labels:
     app: web-application
     workshop: workshop
@@ -39,7 +36,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
       - name: web-application
-        image: bashofmann/k8s-workshop-web-application:8.0.9
+        image: bashofmann/k8s-workshop-web-application:8.0.0
         imagePullPolicy: Always
         env:
         - name: DB_HOST
