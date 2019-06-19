@@ -5,7 +5,7 @@ metadata:
   name: web-application
   namespace: stage
   annotations:
-    flux.weave.works/automated: "true"
+    flux.weave.works/automated: "false"
     flux.weave.works/tag.chart-image: semver:~8.0
   labels:
     app: web-application
@@ -39,7 +39,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
       - name: web-application
-        image: bashofmann/k8s-workshop-web-application:8.0.10
+        image: bashofmann/k8s-workshop-web-application:8.0.1
         imagePullPolicy: Always
         env:
         - name: DB_HOST
