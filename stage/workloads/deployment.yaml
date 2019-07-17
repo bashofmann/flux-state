@@ -6,7 +6,7 @@ metadata:
   namespace: stage
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.chart-image: semver:~8.0
+    flux.weave.works/tag.chart-image: regex:.*
   labels:
     app: web-application
     workshop: workshop
